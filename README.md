@@ -60,10 +60,10 @@ While learning Reinforcement Learning, I noticed most implementations use **defa
 ### Quantitative Performance Summary
 
 | Algorithm | Episodes to Convergence | Final Avg Reward | Success Rate | Std Dev |
-|-----------|------------------------|------------------|--------------|---------|
+|-----------|------------------------:|-----------------:|-------------:|--------:|
 | **Double Q-Learning** | ~2,000 | **9.2** | **95%+** | 0.8 |
-| Q-Learning | ~2,500 | 8.9 | 95%+ | 1.1 |
-| SARSA | ~3,000 | 8.7 | 94%+ | 1.2 |
+| Q-Learning            | ~2,500 | 8.9    | 95%+       | 1.1 |
+| SARSA                 | ~3,000 | 8.7    | 94%+       | 1.2 |
 
 ### Key Findings
 
@@ -184,12 +184,12 @@ Taxi-v3/
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/taxi-v3-qlearning.git
-cd taxi-v3-qlearning
+git clone https://github.com/paulo-b-vale/Taxi-v3.git
+cd Taxi-v3
 
 # Create virtual environment (recommended)
 python -m venv venv
-.\venv\Scripts\activate   # Windows
+.\venv\Scripts\activate   # Windows (PowerShell / CMD)
 # source venv/bin/activate  # Linux/macOS
 
 # Install dependencies
@@ -206,6 +206,8 @@ This will:
 - Train a Q-Learning agent (5,000 episodes, ~2-3 min)
 - Open a visual window showing the taxi navigating
 - Demonstrate 5 successful games
+
+If `demo_visual.py` is not present at repository root, try `src/demo_visual.py` or run the training script in `src/` (see below).
 
 #### 2. Run the Full Analysis Notebook
 ```bash
@@ -329,5 +331,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <p align="center">
   <i>Built with ❤️ for learning and sharing</i>
-</p>#   T a x i - v 3  
- 
+</p>
